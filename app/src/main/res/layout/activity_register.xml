@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="15dp"
+        android:text="Register"
+        android:textColor="@color/blue2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idBimbel_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <EditText
+        android:id="@+id/idBimbel_et"
+        android:layout_width="362dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:hint="ID Bimbel"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_text"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/emailRegist_et"
+        android:layout_width="362dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:hint="Alamat Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idBimbel_et"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/namaRegist_et"
+        android:layout_width="362dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:hint="Nama Lengkap"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailRegist_et"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/passwordRegist_et"
+        android:layout_width="362dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaRegist_et"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/konfirmasiRegist_et"
+        android:layout_width="362dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/grey"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordRegist_et"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="261dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/konfirmasiRegist_et"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah pernah daftar? "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/loginText_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/blue2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
